@@ -51,6 +51,12 @@ Run helper verification script:
 npm run verify:helpers
 ```
 
+Run unit tests:
+
+```bash
+npm test
+```
+
 ## Libraries Used
 
 - React
@@ -121,6 +127,7 @@ JSONPlaceholder user schema does not directly include assignment fields for firs
 - Authentication is mock/frontend-only and persisted using `localStorage` (not secure for production).
 - Search/filter/sort/pagination logic is centralized in `src/utils/userTable.js`.
 - Auth field validation is centralized in `src/utils/validators.js`.
+- Utility behavior is covered with unit tests in `src/utils/*.test.js`.
 
 ## Auth Flow (Frontend-Only Mock Auth)
 

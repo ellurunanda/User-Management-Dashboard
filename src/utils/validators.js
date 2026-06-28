@@ -1,4 +1,5 @@
 export function validateEmail(email) {
+  // Lightweight email guard for client-side UX before submit; server-side validation is still required in real apps.
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 

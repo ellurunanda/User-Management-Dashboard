@@ -1,6 +1,7 @@
 import { DEPARTMENTS } from './constants.js';
 
 export function splitName(name = '') {
+  // JSONPlaceholder provides a single "name" field, so we split it for assignment-specific first/last columns.
   const parts = name.trim().split(/\s+/).filter(Boolean);
   return {
     firstName: parts[0] || '',
